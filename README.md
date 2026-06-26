@@ -2,7 +2,7 @@
 
 A claim-safe structured-light perception simulator plus symbolic substrate-code renderer.
 
-Current sprint: **MVP v0.3 — Instrument Polish + Export Mode**.
+Current sprint: **MVP v0.4 — Modular Kernel Split**.
 
 Live demo target:
 
@@ -58,17 +58,16 @@ The Vite base path is configured for the project page route:
 /codeveil369/
 ```
 
-If the first deployment does not appear automatically, open the repo settings and set Pages source to **GitHub Actions**.
+## v0.4 Additions
 
-## v0.3 Additions
-
-1. Instrument preset selector and preset notes.
-2. Poster export button.
-3. Share-text copy button.
-4. Fullscreen mode.
-5. Ledger Receipt selector.
-6. Runtime status card.
-7. Mobile polish for the instrument toolbar.
+1. Split shared types into `src/types.ts`.
+2. Split presets and glyph families into `src/data/presets.ts`.
+3. Split Ledger receipt tiers into `src/data/receipts.ts`.
+4. Split field math helpers into `src/kernels/visualMath.ts`.
+5. Split the visual field renderer into `src/kernels/fieldKernel.ts`.
+6. Split the chamber renderer into `src/kernels/chamberKernel.ts`.
+7. Split poster export into `src/utils/exportPoster.ts`.
+8. Updated runtime labels to v0.4.
 
 ## Architecture
 
@@ -95,8 +94,8 @@ WorldCode(x,t) = SymbolMap(
 
 ## Next Sprint Ideas
 
-1. Split kernels and components into modular files.
-2. Add save/load JSON presets.
-3. Add same-seed A/B comparison mode.
+1. Add save/load JSON presets.
+2. Add same-seed A/B comparison mode.
+3. Move UI components into dedicated files once connector filters permit it.
 4. Add smoother WebGL/GLSL field rendering.
 5. Add a walking 3D chamber with Three.js.

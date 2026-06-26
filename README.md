@@ -4,6 +4,12 @@ A claim-safe DMT-laser perception simulator plus symbolic substrate-code rendere
 
 Current sprint: **MVP v0.2 — Material Code Chamber**.
 
+Live demo target:
+
+```text
+https://michaelwave369.github.io/codeveil369/
+```
+
 This browser app renders:
 
 - simulated laser diffraction / speckle fields
@@ -38,6 +44,22 @@ Then open the local Vite URL shown in your terminal.
 npm run build
 npm run preview
 ```
+
+## Deploy
+
+This repo includes a GitHub Pages workflow at:
+
+```text
+.github/workflows/deploy-pages.yml
+```
+
+The Vite base path is configured for the project page route:
+
+```text
+/codeveil369/
+```
+
+If the first deployment does not appear automatically, open the repo settings and set Pages source to **GitHub Actions**.
 
 ## Architecture
 

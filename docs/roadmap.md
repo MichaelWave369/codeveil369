@@ -1,34 +1,35 @@
 # CodeVeil369 Roadmap
 
-## v0.3 — Instrument Polish + Export Mode
-
-- preset selector
-- poster export
-- share-text generation
-- fullscreen mode
-- Ledger receipt selector
-- runtime status messaging
-- mobile polish
-
 ## v0.4 — Modular Kernel Split
 
-- move field, entoptic, perceptual, glyph, and material logic into separate modules
-- add typed preset registry
-- add seed export/import
-- add screenshot/export panel refinements
+- shared types
+- preset registry
+- receipt registry
+- visual math helpers
+- field rendering module
+- chamber rendering module
+- poster export utility
 
-## v0.5 — Experiment Seed Ledger
+## v0.5 — Preset Ledger + A/B Compare
 
-- save parameter bundles as JSON
-- compare sober / entoptic / glyph / substrate modes
-- add reproducible visual seeds
-- optional metadata-only adapter
+- save current parameter bundle as JSON
+- load parameter bundles from JSON
+- compare same-seed mode outputs side by side
+- compare material focus outputs side by side
+- add reproducible snapshot receipts
 
-## v0.6 — 3D Chamber Prototype
+## v0.6 — Shader Field Upgrade
 
-- WebGL / Three.js scene
+- WebGL field renderer
+- smoother interference patterns
+- faster glyph emergence
+- better fullscreen performance
+
+## v0.7 — 3D Chamber Prototype
+
+- Three.js scene
 - source, receiver wall, water, quartz, bamboo, magnet, observer lens
-- per-material shader glyph language
+- per-material visual language
 
 ## v1.0 — Public Demo Instrument
 

@@ -2,7 +2,7 @@
 
 A claim-safe structured-light perception simulator plus symbolic substrate-code renderer.
 
-Current sprint: **MVP v0.5 — Preset Ledger + A/B Compare**.
+Current sprint: **MVP v0.6 — Snapshot Hash + Compare Polish**.
 
 Live demo target:
 
@@ -21,7 +21,9 @@ This browser app renders:
 - instrument presets, simulation meters, and runtime status
 - poster export and share-text generation
 - save/load preset JSON ledgers
-- same-seed A/B comparison panels
+- deterministic snapshot hashes
+- same-seed field/chamber A/B comparison panels
+- a local browser preset gallery
 - a built-in Ledger boundary panel
 
 ## Ledger Boundary
@@ -60,15 +62,15 @@ The Vite base path is configured for the project page route:
 /codeveil369/
 ```
 
-## v0.5 Additions
+## v0.6 Additions
 
-1. Save current settings as a JSON preset ledger.
-2. Load CodeVeil369 preset ledger JSON files.
-3. Copy preset ledger JSON to clipboard.
-4. Same-seed A/B comparison panel.
-5. A/B buttons for sober, glyph, and substrate comparison states.
-6. Snapshot JSON card for receipt inspection.
-7. New `src/utils/presetLedger.ts` utility.
+1. Deterministic snapshot hashes for parameter bundles.
+2. Snapshot hashes included in preset ledger JSON.
+3. Current vs comparison hash display.
+4. Field/chamber compare toggles.
+5. Local browser preset gallery.
+6. Load saved gallery snapshots back into the instrument.
+7. New `src/utils/snapshotHash.ts` utility.
 
 ## Architecture
 
@@ -82,21 +84,9 @@ G = glyph / code attractor
 C = perceived code-field render
 ```
 
-Material chamber layer:
-
-```text
-WorldCode(x,t) = SymbolMap(
-  MatterState(x,t),
-  RelationGraph(x,t),
-  WavePhase(x,t),
-  MemoryTrace(x,t)
-)
-```
-
 ## Next Sprint Ideas
 
-1. Add stronger A/B layout controls for field vs chamber.
-2. Add reproducible snapshot hashes.
-3. Add gallery of saved presets.
-4. Add smoother WebGL/GLSL field rendering.
-5. Add a walking 3D chamber with Three.js.
+1. Add stronger local preset gallery management.
+2. Add WebGL/GLSL field rendering.
+3. Add field/chamber A/B export poster.
+4. Add a walking 3D chamber with Three.js.

@@ -1,23 +1,24 @@
 # CodeVeil369 Release Notes
 
-## v0.6.0 — Snapshot Hash + Compare Polish
+## v0.7.0 — Shader Field Upgrade
 
-This sprint adds deterministic snapshot hashes and clearer comparison tools.
+This sprint adds an accelerated field renderer while preserving the original canvas path as fallback.
 
 ### Added
 
-- Deterministic snapshot hashes for parameter bundles.
-- Snapshot hash utility at `src/utils/snapshotHash.ts`.
-- Snapshot hashes included in preset ledger JSON.
-- Current vs comparison hash display.
-- Field/chamber compare toggle.
-- Local browser preset gallery.
-- Load saved gallery snapshots back into the instrument.
-- v0.6 runtime labels and package version.
+- `src/kernels/webglFieldKernel.ts` for the accelerated field renderer.
+- `src/kernels/canvasFieldKernel.ts` as the fallback renderer.
+- `src/kernels/fieldKernel.ts` now routes field rendering through the accelerated path.
+- Poster export updated to v0.7.
+- Package version updated to v0.7.0.
 
 ### Boundary
 
-Snapshot hashes identify software parameter bundles only. They are reproducibility receipts for the simulator, not proof of external hidden code.
+The renderer upgrade improves software visualization only. It does not change the evidence boundary or make an external-reality claim.
+
+## v0.6.0 — Snapshot Hash + Compare Polish
+
+Added deterministic snapshot hashes, current/compare hash labels, field/chamber compare toggles, and a local preset gallery.
 
 ## v0.5.0 — Preset Ledger + A/B Compare
 

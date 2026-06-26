@@ -2,7 +2,7 @@
 
 A claim-safe structured-light perception simulator plus symbolic substrate-code renderer.
 
-Current sprint: **MVP v0.7 — Shader Field Upgrade**.
+Current sprint: **MVP v0.8 — A/B Export Polish**.
 
 Live demo target:
 
@@ -21,6 +21,7 @@ This browser app renders:
 - a WebGL field renderer with canvas fallback
 - instrument presets, simulation meters, and runtime status
 - poster export and share-text generation
+- A/B comparison poster export
 - save/load preset JSON ledgers
 - deterministic snapshot hashes
 - same-seed field/chamber A/B comparison panels
@@ -63,13 +64,14 @@ The Vite base path is configured for the project page route:
 /codeveil369/
 ```
 
-## v0.7 Additions
+## v0.8 Additions
 
-1. Added `src/kernels/webglFieldKernel.ts`.
-2. Added `src/kernels/canvasFieldKernel.ts` as the fallback path.
-3. Routed `src/kernels/fieldKernel.ts` through the accelerated field renderer.
-4. Preserved chamber rendering, preset ledger, snapshot hash, and A/B comparison behavior.
-5. Updated poster export and package version.
+1. Added `src/utils/exportComparisonPoster.ts`.
+2. Added Export A/B button to the main toolbar.
+3. Added Export A/B button inside the comparison panel.
+4. A/B exports include current hash, comparison hash, view mode, seed, material, and Ledger tier.
+5. Comparison panels now keep canvas refs for poster capture.
+6. Updated runtime labels and package version.
 
 ## Architecture
 
@@ -85,7 +87,7 @@ C = perceived code-field render
 
 ## Next Sprint Ideas
 
-1. Add A/B export poster.
-2. Add stronger local preset gallery management.
-3. Add field renderer selector in the UI.
+1. Add stronger local preset gallery management.
+2. Add field renderer selector in the UI.
+3. Add gallery import/export bundle.
 4. Add a walking 3D chamber with Three.js.

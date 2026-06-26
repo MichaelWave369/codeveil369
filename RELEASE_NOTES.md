@@ -1,23 +1,28 @@
 # CodeVeil369 Release Notes
 
-## v0.2.0 — Material Code Chamber
+## v0.3.0 — Instrument Polish + Export Mode
 
-Added a symbolic chamber scene that renders multiple materials as different code languages while preserving the Ledger boundary.
+This sprint turns CodeVeil369 from a visual prototype into a more shareable public instrument.
 
 ### Added
 
-- Material Code Chamber canvas.
-- Wall receiver plane with diffraction-code glyph field.
-- Water bowl with ripple script.
-- Quartz crystal with angular lattice symbols.
-- Bamboo column with node/segment symbols.
-- Magnet with field-line syntax.
-- Observer silhouette with breath/perception rings.
-- Material focus buttons.
-- Chamber reveal and laser sweep controls.
-- Model meters for optical carrier, perceptual gain, glyph coherence, and substrate reveal.
-- Expanded README and LEDGER.
+- Instrument preset bar with:
+  - Sober Optics
+  - Entoptic Bloom
+  - Altered Glyph Field
+  - Substrate Chamber
+  - Report Seed
+- Poster export button that renders a shareable PNG snapshot.
+- Copy-share-text button with a built-in Ledger-safe description.
+- Fullscreen mode.
+- Ledger Receipt selector with symbolic, perceptual, and hypothesis framing tiers.
+- Runtime status card for instrument messages.
+- Improved mobile responsiveness for the toolbar and card layout.
 
 ### Boundary
 
-This remains a toy-model simulator and symbolic renderer. It does not prove external hidden code or provide real-world protocol instructions.
+This remains a toy-model simulator and symbolic renderer. It does not prove external hidden code or provide real-world operational instructions.
+
+## v0.2.0 — Material Code Chamber
+
+Added a symbolic chamber scene that renders multiple materials as different code languages while preserving the Ledger boundary.

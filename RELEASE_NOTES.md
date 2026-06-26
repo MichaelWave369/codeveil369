@@ -1,22 +1,27 @@
 # CodeVeil369 Release Notes
 
-## v0.5.0 — Preset Ledger + A/B Compare
+## v0.6.0 — Snapshot Hash + Compare Polish
 
-This sprint adds receipt-style preset persistence and same-seed comparison tools.
+This sprint adds deterministic snapshot hashes and clearer comparison tools.
 
 ### Added
 
-- Save current settings as CodeVeil369 preset ledger JSON.
-- Load preset ledger JSON back into the instrument.
-- Copy the current preset ledger JSON to clipboard.
-- Same-seed A/B comparison panel.
-- A/B buttons for sober, glyph, and substrate comparison states.
-- Snapshot JSON card for receipt inspection.
-- `src/utils/presetLedger.ts` for preset ledger creation, download, and file reading.
+- Deterministic snapshot hashes for parameter bundles.
+- Snapshot hash utility at `src/utils/snapshotHash.ts`.
+- Snapshot hashes included in preset ledger JSON.
+- Current vs comparison hash display.
+- Field/chamber compare toggle.
+- Local browser preset gallery.
+- Load saved gallery snapshots back into the instrument.
+- v0.6 runtime labels and package version.
 
 ### Boundary
 
-Preset ledgers preserve simulation settings and claim boundaries. They are reproducible software receipts, not proof of external hidden code.
+Snapshot hashes identify software parameter bundles only. They are reproducibility receipts for the simulator, not proof of external hidden code.
+
+## v0.5.0 — Preset Ledger + A/B Compare
+
+Added save/load JSON preset ledgers, same-seed comparison panels, and snapshot JSON inspection.
 
 ## v0.4.0 — Modular Kernel Split
 

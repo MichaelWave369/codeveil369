@@ -2,7 +2,7 @@
 
 A claim-safe structured-light perception simulator plus symbolic substrate-code renderer.
 
-Current sprint: **MVP v0.6 — Snapshot Hash + Compare Polish**.
+Current sprint: **MVP v0.7 — Shader Field Upgrade**.
 
 Live demo target:
 
@@ -12,12 +12,13 @@ https://michaelwave369.github.io/codeveil369/
 
 This browser app renders:
 
-- simulated laser diffraction / speckle fields
+- simulated diffraction / speckle fields
 - entoptic-style filtering
 - a toy-model altered-perception layer
 - emergent glyph/code attractors
 - a symbolic substrate-code mode
 - a Material Code Chamber with wall, water, quartz, bamboo, magnet, and observer lenses
+- a WebGL field renderer with canvas fallback
 - instrument presets, simulation meters, and runtime status
 - poster export and share-text generation
 - save/load preset JSON ledgers
@@ -62,15 +63,13 @@ The Vite base path is configured for the project page route:
 /codeveil369/
 ```
 
-## v0.6 Additions
+## v0.7 Additions
 
-1. Deterministic snapshot hashes for parameter bundles.
-2. Snapshot hashes included in preset ledger JSON.
-3. Current vs comparison hash display.
-4. Field/chamber compare toggles.
-5. Local browser preset gallery.
-6. Load saved gallery snapshots back into the instrument.
-7. New `src/utils/snapshotHash.ts` utility.
+1. Added `src/kernels/webglFieldKernel.ts`.
+2. Added `src/kernels/canvasFieldKernel.ts` as the fallback path.
+3. Routed `src/kernels/fieldKernel.ts` through the accelerated field renderer.
+4. Preserved chamber rendering, preset ledger, snapshot hash, and A/B comparison behavior.
+5. Updated poster export and package version.
 
 ## Architecture
 
@@ -86,7 +85,7 @@ C = perceived code-field render
 
 ## Next Sprint Ideas
 
-1. Add stronger local preset gallery management.
-2. Add WebGL/GLSL field rendering.
-3. Add field/chamber A/B export poster.
+1. Add A/B export poster.
+2. Add stronger local preset gallery management.
+3. Add field renderer selector in the UI.
 4. Add a walking 3D chamber with Three.js.

@@ -1,20 +1,11 @@
 # CodeVeil369 Roadmap
 
-## v0.6 — Snapshot Hash
-
-- deterministic parameter hashes
-- current and comparison hash labels
-- field/chamber compare toggles
-- local browser preset gallery
-- load gallery snapshots back into runtime
-
 ## v0.7 — Shader Field Upgrade
 
-- WebGL field renderer
+- accelerated field renderer
+- canvas fallback path
 - smoother interference patterns
-- faster glyph emergence
-- better fullscreen performance
-- keep the Canvas renderer as a fallback path
+- better fullscreen performance foundation
 
 ## v0.8 — A/B Export Polish
 

@@ -1,29 +1,30 @@
 # CodeVeil369 Roadmap
 
-## v0.7 — Shader Field Upgrade
-
-- accelerated field renderer
-- canvas fallback path
-- smoother interference patterns
-- better fullscreen performance foundation
-
 ## v0.8 — A/B Export Polish
 
 - export comparison poster
-- include both current and comparison hashes
+- include current and comparison hashes
 - include view mode, seed, material, and receipt tier
-- improve preset gallery management
+- preserve boundary text in exported comparison image
 
-## v0.9 — 3D Chamber Prototype
+## v0.9 — Gallery Management
+
+- rename saved gallery snapshots
+- delete individual gallery snapshots
+- export local gallery as a bundle
+- import local gallery bundle
+- improve gallery card layout
+
+## v1.0 — 3D Chamber Prototype
 
 - Three.js scene
 - source, receiver wall, water, quartz, bamboo, magnet, observer lens
 - per-material visual language
 
-## v1.0 — Public Demo Instrument
+## v1.1 — Public Demo Instrument
 
-- hosted demo
+- hosted demo polish
 - release tags
 - stable docs
-- claim boundary audit
+- boundary audit
 - accessibility pass

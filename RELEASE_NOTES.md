@@ -1,27 +1,27 @@
 # CodeVeil369 Release Notes
 
-## v0.3.0 — Instrument Polish + Export Mode
+## v0.4.0 — Modular Kernel Split
 
-This sprint turns CodeVeil369 from a visual prototype into a more shareable public instrument.
+This sprint restructures CodeVeil369 so the visual instrument is easier to extend toward save/load presets, A/B comparisons, shader rendering, and a future 3D chamber.
 
 ### Added
 
-- Instrument preset bar with:
-  - Sober Optics
-  - Entoptic Bloom
-  - Altered Glyph Field
-  - Substrate Chamber
-  - Report Seed
-- Poster export button that renders a shareable PNG snapshot.
-- Copy-share-text button with a built-in Ledger-safe description.
-- Fullscreen mode.
-- Ledger Receipt selector with symbolic, perceptual, and hypothesis framing tiers.
-- Runtime status card for instrument messages.
-- Improved mobile responsiveness for the toolbar and card layout.
+- `src/types.ts` for shared Mode, Material, ReceiptTier, Params, and Preset types.
+- `src/data/presets.ts` for modes, materials, glyphs, default params, and instrument presets.
+- `src/data/receipts.ts` for Ledger receipt tiers.
+- `src/kernels/visualMath.ts` for clamp, noise, and wavelength color helpers.
+- `src/kernels/fieldKernel.ts` for visual field rendering.
+- `src/kernels/chamberKernel.ts` for Material Code Chamber rendering.
+- `src/utils/exportPoster.ts` for poster PNG export.
+- v0.4 runtime labels and package version.
 
 ### Boundary
 
 This remains a toy-model simulator and symbolic renderer. It does not prove external hidden code or provide real-world operational instructions.
+
+## v0.3.0 — Instrument Polish + Export Mode
+
+Added instrument presets, poster export, share text, fullscreen, Ledger receipt selector, runtime status, and mobile polish.
 
 ## v0.2.0 — Material Code Chamber
 

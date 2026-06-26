@@ -2,7 +2,7 @@
 
 A claim-safe structured-light perception simulator plus symbolic substrate-code renderer.
 
-Current sprint: **MVP v0.4 — Modular Kernel Split**.
+Current sprint: **MVP v0.5 — Preset Ledger + A/B Compare**.
 
 Live demo target:
 
@@ -20,6 +20,8 @@ This browser app renders:
 - a Material Code Chamber with wall, water, quartz, bamboo, magnet, and observer lenses
 - instrument presets, simulation meters, and runtime status
 - poster export and share-text generation
+- save/load preset JSON ledgers
+- same-seed A/B comparison panels
 - a built-in Ledger boundary panel
 
 ## Ledger Boundary
@@ -58,16 +60,15 @@ The Vite base path is configured for the project page route:
 /codeveil369/
 ```
 
-## v0.4 Additions
+## v0.5 Additions
 
-1. Split shared types into `src/types.ts`.
-2. Split presets and glyph families into `src/data/presets.ts`.
-3. Split Ledger receipt tiers into `src/data/receipts.ts`.
-4. Split field math helpers into `src/kernels/visualMath.ts`.
-5. Split the visual field renderer into `src/kernels/fieldKernel.ts`.
-6. Split the chamber renderer into `src/kernels/chamberKernel.ts`.
-7. Split poster export into `src/utils/exportPoster.ts`.
-8. Updated runtime labels to v0.4.
+1. Save current settings as a JSON preset ledger.
+2. Load CodeVeil369 preset ledger JSON files.
+3. Copy preset ledger JSON to clipboard.
+4. Same-seed A/B comparison panel.
+5. A/B buttons for sober, glyph, and substrate comparison states.
+6. Snapshot JSON card for receipt inspection.
+7. New `src/utils/presetLedger.ts` utility.
 
 ## Architecture
 
@@ -94,8 +95,8 @@ WorldCode(x,t) = SymbolMap(
 
 ## Next Sprint Ideas
 
-1. Add save/load JSON presets.
-2. Add same-seed A/B comparison mode.
-3. Move UI components into dedicated files once connector filters permit it.
+1. Add stronger A/B layout controls for field vs chamber.
+2. Add reproducible snapshot hashes.
+3. Add gallery of saved presets.
 4. Add smoother WebGL/GLSL field rendering.
 5. Add a walking 3D chamber with Three.js.

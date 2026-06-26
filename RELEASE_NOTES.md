@@ -1,23 +1,26 @@
 # CodeVeil369 Release Notes
 
-## v0.4.0 — Modular Kernel Split
+## v0.5.0 — Preset Ledger + A/B Compare
 
-This sprint restructures CodeVeil369 so the visual instrument is easier to extend toward save/load presets, A/B comparisons, shader rendering, and a future 3D chamber.
+This sprint adds receipt-style preset persistence and same-seed comparison tools.
 
 ### Added
 
-- `src/types.ts` for shared Mode, Material, ReceiptTier, Params, and Preset types.
-- `src/data/presets.ts` for modes, materials, glyphs, default params, and instrument presets.
-- `src/data/receipts.ts` for Ledger receipt tiers.
-- `src/kernels/visualMath.ts` for clamp, noise, and wavelength color helpers.
-- `src/kernels/fieldKernel.ts` for visual field rendering.
-- `src/kernels/chamberKernel.ts` for Material Code Chamber rendering.
-- `src/utils/exportPoster.ts` for poster PNG export.
-- v0.4 runtime labels and package version.
+- Save current settings as CodeVeil369 preset ledger JSON.
+- Load preset ledger JSON back into the instrument.
+- Copy the current preset ledger JSON to clipboard.
+- Same-seed A/B comparison panel.
+- A/B buttons for sober, glyph, and substrate comparison states.
+- Snapshot JSON card for receipt inspection.
+- `src/utils/presetLedger.ts` for preset ledger creation, download, and file reading.
 
 ### Boundary
 
-This remains a toy-model simulator and symbolic renderer. It does not prove external hidden code or provide real-world operational instructions.
+Preset ledgers preserve simulation settings and claim boundaries. They are reproducible software receipts, not proof of external hidden code.
+
+## v0.4.0 — Modular Kernel Split
+
+Split shared types, presets, receipts, visual math, field rendering, chamber rendering, and poster export into separate modules.
 
 ## v0.3.0 — Instrument Polish + Export Mode
 

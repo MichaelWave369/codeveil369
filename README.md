@@ -1,8 +1,8 @@
 # CodeVeil369
 
-A claim-safe DMT-laser perception simulator plus symbolic substrate-code renderer.
+A claim-safe structured-light perception simulator plus symbolic substrate-code renderer.
 
-Current sprint: **MVP v0.2 — Material Code Chamber**.
+Current sprint: **MVP v0.3 — Instrument Polish + Export Mode**.
 
 Live demo target:
 
@@ -18,7 +18,8 @@ This browser app renders:
 - emergent glyph/code attractors
 - a symbolic substrate-code mode
 - a Material Code Chamber with wall, water, quartz, bamboo, magnet, and observer lenses
-- material focus controls and simulation meters
+- instrument presets, simulation meters, and runtime status
+- poster export and share-text generation
 - a built-in Ledger boundary panel
 
 ## Ledger Boundary
@@ -27,7 +28,7 @@ This is not evidence that reality contains visible source code. It is a software
 
 The Material Code Chamber renders matter *as if* its state can be read as symbolic code. That is an artistic/research visualization layer, not a physical proof claim.
 
-This is also not a drug guide or laser-use protocol. Do not aim lasers at eyes. Follow all local laws and safety standards.
+This is also not a real-world protocol. Do not aim lasers at eyes. Follow all local laws and safety standards.
 
 ## Run
 
@@ -35,8 +36,6 @@ This is also not a drug guide or laser-use protocol. Do not aim lasers at eyes. 
 npm install
 npm run dev
 ```
-
-Then open the local Vite URL shown in your terminal.
 
 ## Build
 
@@ -61,14 +60,24 @@ The Vite base path is configured for the project page route:
 
 If the first deployment does not appear automatically, open the repo settings and set Pages source to **GitHub Actions**.
 
+## v0.3 Additions
+
+1. Instrument preset selector and preset notes.
+2. Poster export button.
+3. Share-text copy button.
+4. Fullscreen mode.
+5. Ledger Receipt selector.
+6. Runtime status card.
+7. Mobile polish for the instrument toolbar.
+
 ## Architecture
 
 ```text
 C = G(N(E(L)))
 
-L = laser / diffraction field
+L = structured field
 E = eye / entoptic transform
-N = neural / perceptual-state toy model
+N = perceptual-state toy model
 G = glyph / code attractor
 C = perceived code-field render
 ```
@@ -84,20 +93,10 @@ WorldCode(x,t) = SymbolMap(
 )
 ```
 
-## v0.2 Additions
-
-1. Material Code Chamber canvas.
-2. Water, quartz, bamboo, magnet, wall, and observer symbolic behaviors.
-3. Material focus buttons.
-4. Chamber reveal and laser sweep controls.
-5. Simulation meters for optical carrier, perceptual gain, glyph coherence, and substrate reveal.
-6. Test Harness card for no-laser, expectation, and receipt-rule comparison thinking.
-
 ## Next Sprint Ideas
 
-1. Add WebGL/GLSL shaders for faster visual fields.
-2. Add screenshot/export-to-poster mode.
-3. Add real test harness snapshots: A/B render comparisons using the same seed.
-4. Add a Veilbreak metadata adapter for metadata-only analytics.
-5. Add project save/load JSON presets.
-6. Add a walking 3D chamber with Three.js.
+1. Split kernels and components into modular files.
+2. Add save/load JSON presets.
+3. Add same-seed A/B comparison mode.
+4. Add smoother WebGL/GLSL field rendering.
+5. Add a walking 3D chamber with Three.js.

@@ -1,28 +1,30 @@
 # CodeVeil369 Roadmap
 
-## v0.2 — Material Code Chamber
+## v0.3 — Instrument Polish + Export Mode
 
-- 2D structured-field simulator
-- entoptic / perceptual toy filters
-- glyph emergence layer
-- chamber material focus modes
-- safety and Ledger boundaries
+- preset selector
+- poster export
+- share-text generation
+- fullscreen mode
+- Ledger receipt selector
+- runtime status messaging
+- mobile polish
 
-## v0.3 — Modular Kernel Split
+## v0.4 — Modular Kernel Split
 
-- move field, entoptic, neural, glyph, and material logic into separate modules
-- add typed presets
+- move field, entoptic, perceptual, glyph, and material logic into separate modules
+- add typed preset registry
 - add seed export/import
-- add screenshot/export panel
+- add screenshot/export panel refinements
 
-## v0.4 — Experiment Seed Ledger
+## v0.5 — Experiment Seed Ledger
 
 - save parameter bundles as JSON
 - compare sober / entoptic / glyph / substrate modes
 - add reproducible visual seeds
 - optional metadata-only adapter
 
-## v0.5 — 3D Chamber Prototype
+## v0.6 — 3D Chamber Prototype
 
 - WebGL / Three.js scene
 - source, receiver wall, water, quartz, bamboo, magnet, observer lens

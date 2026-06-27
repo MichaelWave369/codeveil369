@@ -1,20 +1,25 @@
 # CodeVeil369 Release Notes
 
-## v0.9.0 — Gallery Management
+## v1.0.0 — Public Demo Polish
 
-This sprint adds local gallery bundle management while preserving snapshot hash receipts.
+This release marks CodeVeil369 as a public demo instrument with clearer metadata, release framing, accessibility notes, and public boundary documentation.
 
 ### Added
 
-- `public/galleryEnhancer.js` as a lightweight gallery management overlay.
-- `src/utils/galleryBundle.ts` for gallery bundle import/export support.
-- Gallery overlay is mounted from `index.html` using the Vite base path.
-- Overlay can refresh, relabel, remove, export, and import local gallery snapshots.
-- Package version updated to v0.9.0.
+- Public demo metadata in `index.html`.
+- Noscript fallback message.
+- `docs/public-demo-audit.md`.
+- `docs/accessibility.md`.
+- README updated for v1.0 public release framing.
+- Package version updated to v1.0.0.
 
 ### Boundary
 
-Gallery bundles are local software receipts for saved simulator states. They are not evidence of external hidden code or an external-reality claim.
+CodeVeil369 remains a software visualization and toy-model simulator. It does not prove external hidden code, simulation theory, clinical claims, or physical validation.
+
+## v0.9.0 — Gallery Management
+
+Added local gallery bundle management while preserving snapshot hash receipts.
 
 ## v0.8.0 — A/B Export Polish
 

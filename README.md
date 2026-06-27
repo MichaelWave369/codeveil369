@@ -2,7 +2,7 @@
 
 A claim-safe structured-light perception simulator plus symbolic substrate-code renderer.
 
-Current sprint: **MVP v0.8 — A/B Export Polish**.
+Current sprint: **MVP v0.9 — Gallery Management**.
 
 Live demo target:
 
@@ -26,6 +26,7 @@ This browser app renders:
 - deterministic snapshot hashes
 - same-seed field/chamber A/B comparison panels
 - a local browser preset gallery
+- a v0.9 gallery overlay for relabeling, removing, exporting, and importing gallery bundles
 - a built-in Ledger boundary panel
 
 ## Ledger Boundary
@@ -64,14 +65,14 @@ The Vite base path is configured for the project page route:
 /codeveil369/
 ```
 
-## v0.8 Additions
+## v0.9 Additions
 
-1. Added `src/utils/exportComparisonPoster.ts`.
-2. Added Export A/B button to the main toolbar.
-3. Added Export A/B button inside the comparison panel.
-4. A/B exports include current hash, comparison hash, view mode, seed, material, and Ledger tier.
-5. Comparison panels now keep canvas refs for poster capture.
-6. Updated runtime labels and package version.
+1. Added `public/galleryEnhancer.js`.
+2. Added `src/utils/galleryBundle.ts`.
+3. Mounted the gallery overlay from `index.html`.
+4. Added local gallery relabel/remove controls in the overlay.
+5. Added gallery bundle export/import.
+6. Updated package version to v0.9.0.
 
 ## Architecture
 
@@ -87,7 +88,7 @@ C = perceived code-field render
 
 ## Next Sprint Ideas
 
-1. Add stronger local preset gallery management.
+1. Integrate gallery management directly into the React panel.
 2. Add field renderer selector in the UI.
-3. Add gallery import/export bundle.
-4. Add a walking 3D chamber with Three.js.
+3. Add a walking 3D chamber with Three.js.
+4. Prepare v1.0 public demo polish.

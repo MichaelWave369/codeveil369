@@ -3,7 +3,7 @@ import { snapshotHash } from "./snapshotHash";
 
 export type PresetLedgerEntry = {
   schema: "codeveil369.preset.v1";
-  appVersion: "0.6.0";
+  appVersion: "0.9.0";
   createdAt: string;
   presetId: string;
   receiptTier: ReceiptTier;
@@ -15,7 +15,7 @@ export type PresetLedgerEntry = {
 export function makePresetLedgerEntry(args: { params: Params; presetId: string; receiptTier: ReceiptTier; ledgerBoundary: string }): PresetLedgerEntry {
   return {
     schema: "codeveil369.preset.v1",
-    appVersion: "0.6.0",
+    appVersion: "0.9.0",
     createdAt: new Date().toISOString(),
     presetId: args.presetId,
     receiptTier: args.receiptTier,

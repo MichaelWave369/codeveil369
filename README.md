@@ -2,7 +2,7 @@
 
 A claim-safe structured-light perception simulator plus symbolic substrate-code renderer.
 
-Current sprint: **MVP v0.9 — Gallery Management**.
+Current release: **v1.0.0 — Public Demo Polish**.
 
 Live demo target:
 
@@ -26,7 +26,8 @@ This browser app renders:
 - deterministic snapshot hashes
 - same-seed field/chamber A/B comparison panels
 - a local browser preset gallery
-- a v0.9 gallery overlay for relabeling, removing, exporting, and importing gallery bundles
+- a gallery overlay for relabeling, removing, exporting, and importing gallery bundles
+- public demo metadata and accessibility notes
 - a built-in Ledger boundary panel
 
 ## Ledger Boundary
@@ -65,14 +66,14 @@ The Vite base path is configured for the project page route:
 /codeveil369/
 ```
 
-## v0.9 Additions
+## v1.0 Additions
 
-1. Added `public/galleryEnhancer.js`.
-2. Added `src/utils/galleryBundle.ts`.
-3. Mounted the gallery overlay from `index.html`.
-4. Added local gallery relabel/remove controls in the overlay.
-5. Added gallery bundle export/import.
-6. Updated package version to v0.9.0.
+1. Added public demo metadata in `index.html`.
+2. Added a noscript fallback message.
+3. Added `docs/public-demo-audit.md`.
+4. Added `docs/accessibility.md`.
+5. Confirmed public boundary language for demo release.
+6. Updated package version to v1.0.0.
 
 ## Architecture
 
@@ -91,4 +92,4 @@ C = perceived code-field render
 1. Integrate gallery management directly into the React panel.
 2. Add field renderer selector in the UI.
 3. Add a walking 3D chamber with Three.js.
-4. Prepare v1.0 public demo polish.
+4. Prepare v1.1 research metadata lane.

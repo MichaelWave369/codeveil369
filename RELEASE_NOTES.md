@@ -1,21 +1,24 @@
 # CodeVeil369 Release Notes
 
-## v0.8.0 — A/B Export Polish
+## v0.9.0 — Gallery Management
 
-This sprint adds comparison poster export for current vs comparison snapshots.
+This sprint adds local gallery bundle management while preserving snapshot hash receipts.
 
 ### Added
 
-- `src/utils/exportComparisonPoster.ts`.
-- Export A/B button in the main toolbar.
-- Export A/B button in the comparison panel.
-- A/B export includes current hash, comparison hash, view mode, mode, seed, material, receipt tier, and Ledger boundary.
-- Comparison canvases now keep refs so the current displayed comparison can be captured.
-- Package version updated to v0.8.0.
+- `public/galleryEnhancer.js` as a lightweight gallery management overlay.
+- `src/utils/galleryBundle.ts` for gallery bundle import/export support.
+- Gallery overlay is mounted from `index.html` using the Vite base path.
+- Overlay can refresh, relabel, remove, export, and import local gallery snapshots.
+- Package version updated to v0.9.0.
 
 ### Boundary
 
-A/B exports are visual software receipts for parameter comparison. They do not prove external hidden code or any external-reality claim.
+Gallery bundles are local software receipts for saved simulator states. They are not evidence of external hidden code or an external-reality claim.
+
+## v0.8.0 — A/B Export Polish
+
+Added comparison poster export for current vs comparison snapshots.
 
 ## v0.7.0 — Shader Field Upgrade
 
